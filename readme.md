@@ -14,10 +14,10 @@ Vivado 2018.3/Vivado HLS 2018.3/Jupyter Notebook
 
 <h3> RIGENERARE PROGETTO VIVADO </h3>  
 
-1)per rigenerare il progetto entra su vivado 2018.3  
-2)andare sulla" tcl console" in basso alla main page di vivado  
-3)digitare "cd" sul percorso dove si trova la cartella  
-4)appena ti trovi nella cartella, digitare "source project_2.tcl"  
+1.Per rigenerare il progetto entra su vivado 2018.3  
+2.Andare sulla" tcl console" in basso alla main page di vivado  
+3.Digitare "cd" sul percorso dove si trova la cartella  
+4.Appena ti trovi nella cartella, digitare "source project_2.tcl"  
 
 
 <h3> JUPYTER NOTEBOOK</h3> 
