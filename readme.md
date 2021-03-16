@@ -1,5 +1,6 @@
 <h1> PYNQ-PROCESSING </h1>
 
+specifica coming soon
 
 
 <h3> HARDWARE UTILIZZATO </h3>  
