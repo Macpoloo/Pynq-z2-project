@@ -8,8 +8,10 @@ l'implementazione di questo progetto è stata fatta sulla scheda Pynq-z2 che si 
 dettagli della scheda http://www.pynq.io/  http://www.pynq.io/board.html
 
 
-<h3> PIATTAFORME SOFTWARE </h3>  </n>
+<h3> PIATTAFORME SOFTWARE </h3>  
 Vivado 2018.3/Vivado HLS 2018.3/Jupyter Notebook
+
+<h3>STRUTTURA DEI FILE</h3> 
 
 
 <h3> RIGENERARE PROGETTO VIVADO </h3>  
@@ -20,6 +22,6 @@ Vivado 2018.3/Vivado HLS 2018.3/Jupyter Notebook
 4.Appena ti trovi nella cartella, digitare "source project_2.tcl"  
 
 
-<h3> JUPYTER NOTEBOOK</h3> 
+<h3> JUPYTERNOTEBOOK</h3> 
 
 Nella cartella bitstream si trovano i file da importare su jupyter per far funzionare multiply.ipynb
