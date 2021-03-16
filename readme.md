@@ -2,7 +2,8 @@ Pynq-processing
 
 
 HARDWARE UTILIZZATO
-l'implementazione di questo progetto è stata fatta sulla scheda Pynq-z2 dettagli della scheda http://www.pynq.io/ http://www.pynq.io/board.html
+l'implementazione di questo progetto è stata fatta sulla scheda Pynq-z2 
+dettagli della scheda http://www.pynq.io/ http://www.pynq.io/board.html
 
 
 
