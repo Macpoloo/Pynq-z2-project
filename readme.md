@@ -5,7 +5,7 @@ specifica coming soon
 
 <h3> HARDWARE UTILIZZATO </h3>  
 l'implementazione di questo progetto è stata fatta sulla scheda Pynq-z2 che si basa su piattaforme Xilinx .   
-dettagli della scheda http://www.pynq.io/  http://www.pynq.io/board.html
+Dettagli della scheda http://www.pynq.io/  http://www.pynq.io/board.html
 
 
 <h3> PIATTAFORME SOFTWARE </h3>  
