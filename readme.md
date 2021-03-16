@@ -1,12 +1,12 @@
 PYNQ-PROCESSING
 
 
-HARDWARE UTILIZZATO
+HARDWARE UTILIZZATO-
 l'implementazione di questo progetto è stata fatta sulla scheda Pynq-z2 che si basa su piattaforme di Xilinx . 
 dettagli della scheda http://www.pynq.io/  http://www.pynq.io/board.html
 
 
-PIATTAFORME SOFTWARE
+PIATTAFORME SOFTWARE-
 Vivao 2018.3/Vivado HLS 2018.3/Jupyter Notebook
 
 
