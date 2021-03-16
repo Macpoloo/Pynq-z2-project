@@ -22,4 +22,4 @@ Vivado 2018.3/Vivado HLS 2018.3/Jupyter Notebook
 
 <h3> JUPYTER NOTEBOOK</h3> 
 
-nella cartella bitstream si trovano i file da importare su jupyter per far funzionare multiply.ipynb
+Nella cartella bitstream si trovano i file da importare su jupyter per far funzionare multiply.ipynb
