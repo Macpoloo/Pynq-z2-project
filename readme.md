@@ -1,4 +1,4 @@
-<h6> PYNQ-PROCESSING <h6>
+<h1> PYNQ-PROCESSING <h1>
 
 
 <h6> HARDWARE UTILIZZATO <h6>
@@ -8,6 +8,10 @@ dettagli della scheda http://www.pynq.io/  http://www.pynq.io/board.html
 
 <h6> PIATTAFORME SOFTWARE <h6>
 Vivado 2018.3/Vivado HLS 2018.3/Jupyter Notebook
+
+
+
+
 
 
 
