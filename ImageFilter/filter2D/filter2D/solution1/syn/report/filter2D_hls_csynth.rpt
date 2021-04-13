@@ -1,0 +1,206 @@
+
+
+================================================================
+== Vivado HLS Report for 'filter2D_hls'
+================================================================
+* Date:           Fri Mar 26 13:53:22 2021
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        filter2D
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|    10.402|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    ?|    ?|    ?|    ?| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------+-----------------------+-----+---------+-----+---------+---------+
+        |                        |                       |    Latency    |    Interval   | Pipeline|
+        |        Instance        |         Module        | min |   max   | min |   max   |   Type  |
+        +------------------------+-----------------------+-----+---------+-----+---------+---------+
+        |Filter2D_U0             |Filter2D               |  163|  2090191|  163|  2090191|   none  |
+        |Loop_2_proc_U0          |Loop_2_proc            |    ?|        ?|    ?|        ?|   none  |
+        |Block_Mat_exit38593_U0  |Block_Mat_exit38593_s  |    2|        2|    2|        2|   none  |
+        |Loop_1_proc_U0          |Loop_1_proc            |    ?|        ?|    ?|        ?|   none  |
+        |Block_proc_U0           |Block_proc             |    0|        0|    0|        0|   none  |
+        +------------------------+-----------------------+-----+---------+-----+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     46|
+|FIFO             |        0|      -|      65|    307|
+|Instance         |        3|     16|    1854|   4198|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     54|
+|Register         |        -|      -|       9|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        3|     16|    1928|   4605|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        1|      7|       1|      8|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------+--------------------------------+---------+-------+-----+------+
+    |             Instance             |             Module             | BRAM_18K| DSP48E|  FF |  LUT |
+    +----------------------------------+--------------------------------+---------+-------+-----+------+
+    |Block_Mat_exit38593_U0            |Block_Mat_exit38593_s           |        0|      8|   37|   218|
+    |Block_proc_U0                     |Block_proc                      |        0|      0|    2|    92|
+    |Filter2D_U0                       |Filter2D                        |        3|      4|  825|  2432|
+    |Loop_1_proc_U0                    |Loop_1_proc                     |        0|      0|  165|   242|
+    |Loop_2_proc_U0                    |Loop_2_proc                     |        0|      4|  523|   726|
+    |filter2D_hls_CONTROL_BUS_s_axi_U  |filter2D_hls_CONTROL_BUS_s_axi  |        0|      0|  302|   488|
+    +----------------------------------+--------------------------------+---------+-------+-----+------+
+    |Total                             |                                |        3|     16| 1854|  4198|
+    +----------------------------------+--------------------------------+---------+-------+-----+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------------------+---------+---+----+------+-----+---------+
+    |           Name          | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +-------------------------+---------+---+----+------+-----+---------+
+    |col_packets_loc_c_U      |        0|  5|  43|     4|   31|      124|
+    |g_img_0_data_stream_s_U  |        0|  5|  20|     2|    8|       16|
+    |g_img_1_data_stream_s_U  |        0|  5|  20|     2|    8|       16|
+    |kernel_val_0_V_0_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_0_V_1_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_0_V_2_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_1_V_0_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_1_V_1_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_1_V_2_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_2_V_0_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_2_V_1_c_U     |        0|  5|  20|     3|    8|       24|
+    |kernel_val_2_V_2_c_U     |        0|  5|  20|     3|    8|       24|
+    |packets_loc_channel_U    |        0|  5|  44|     2|   32|       64|
+    +-------------------------+---------+---+----+------+-----+---------+
+    |Total                    |        0| 65| 307|    37|  151|      436|
+    +-------------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+    |              Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+    |Block_Mat_exit38593_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |Block_proc_U0_ap_ready_count             |     +    |      0|  0|  10|           2|           1|
+    |Loop_1_proc_U0_ap_ready_count            |     +    |      0|  0|  10|           2|           1|
+    |Block_Mat_exit38593_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |Block_proc_U0_ap_start                   |    and   |      0|  0|   2|           1|           1|
+    |Loop_1_proc_U0_ap_start                  |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                  |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                            |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_Block_Mat_exit38593_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Block_proc_U0_ap_ready           |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_1_proc_U0_ap_ready          |    or    |      0|  0|   2|           1|           1|
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                    |          |      0|  0|  46|          14|          11|
+    +-----------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                    | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Block_Mat_exit38593_U0_ap_ready_count        |   9|          2|    2|          4|
+    |Block_proc_U0_ap_ready_count                 |   9|          2|    2|          4|
+    |Loop_1_proc_U0_ap_ready_count                |   9|          2|    2|          4|
+    |ap_sync_reg_Block_Mat_exit38593_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_Block_proc_U0_ap_ready           |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_1_proc_U0_ap_ready          |   9|          2|    1|          2|
+    +---------------------------------------------+----+-----------+-----+-----------+
+    |Total                                        |  54|         12|    9|         18|
+    +---------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------+---+----+-----+-----------+
+    |                     Name                    | FF| LUT| Bits| Const Bits|
+    +---------------------------------------------+---+----+-----+-----------+
+    |Block_Mat_exit38593_U0_ap_ready_count        |  2|   0|    2|          0|
+    |Block_proc_U0_ap_ready_count                 |  2|   0|    2|          0|
+    |Loop_1_proc_U0_ap_ready_count                |  2|   0|    2|          0|
+    |ap_sync_reg_Block_Mat_exit38593_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_Block_proc_U0_ap_ready           |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_1_proc_U0_ap_ready          |  1|   0|    1|          0|
+    +---------------------------------------------+---+----+-----+-----------+
+    |Total                                        |  9|   0|    9|          0|
+    +---------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+---------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  | Source Object |    C Type    |
++---------------------------+-----+-----+------------+---------------+--------------+
+|s_axi_CONTROL_BUS_AWVALID  |  in |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_AWREADY  | out |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_AWADDR   |  in |    7|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_WVALID   |  in |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_WREADY   | out |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_WDATA    |  in |   32|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_WSTRB    |  in |    4|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_ARVALID  |  in |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_ARREADY  | out |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_ARADDR   |  in |    7|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_RVALID   | out |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_RREADY   |  in |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_RDATA    | out |   32|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_RRESP    | out |    2|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_BVALID   | out |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_BREADY   |  in |    1|    s_axi   |  CONTROL_BUS  |  return void |
+|s_axi_CONTROL_BUS_BRESP    | out |    2|    s_axi   |  CONTROL_BUS  |  return void |
+|ap_clk                     |  in |    1| ap_ctrl_hs |  filter2D_hls | return value |
+|ap_rst_n                   |  in |    1| ap_ctrl_hs |  filter2D_hls | return value |
+|interrupt                  | out |    1| ap_ctrl_hs |  filter2D_hls | return value |
+|AXI_LITE_clk               |  in |    1| ap_ctrl_hs |  filter2D_hls | return value |
+|ap_rst_n_AXI_LITE_clk      |  in |    1| ap_ctrl_hs |  filter2D_hls | return value |
+|in_stream_TDATA            |  in |   32|    axis    |  INPUT_data_V |    pointer   |
+|in_stream_TVALID           |  in |    1|    axis    |  INPUT_data_V |    pointer   |
+|in_stream_TREADY           | out |    1|    axis    |  INPUT_data_V |    pointer   |
+|in_stream_TUSER            |  in |    1|    axis    |  INPUT_user_V |    pointer   |
+|in_stream_TLAST            |  in |    1|    axis    |  INPUT_last_V |    pointer   |
+|out_stream_TDATA           | out |   32|    axis    | OUTPUT_data_V |    pointer   |
+|out_stream_TUSER           | out |    1|    axis    | OUTPUT_user_V |    pointer   |
+|out_stream_TLAST           | out |    1|    axis    | OUTPUT_last_V |    pointer   |
+|out_stream_TVALID          | out |    1|    axis    | OUTPUT_last_V |    pointer   |
+|out_stream_TREADY          |  in |    1|    axis    | OUTPUT_last_V |    pointer   |
++---------------------------+-----+-----+------------+---------------+--------------+
+
