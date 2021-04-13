@@ -23,6 +23,7 @@ Numpy/CV2
 3.Posizionarsi nella cartella dove è situato il file "project_2.tcl"
   tramite comandi dos (es: cd e:/folderprj)  
 4.Sulla console tcl digitare: "source project_2.tcl".
+
 5.Le cartelle "Calcola" e "Mult_Constant" contengono i progetti 
   Vivado HLS utilizzati per generare i bitstream usati negli esempi.
   Per aprire i progetti HLS fare doppio click con il mouse su i file ".app"
