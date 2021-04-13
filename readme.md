@@ -42,8 +42,8 @@ Numpy/CV2
 1.Per rigenerare il progetto project_7.tcl all'interno della cartella ImageFilter entrare su vivado 2018.3  
 2.Andare sulla "console tcl" in basso alla main page di vivado  
 3.Posizionarsi nella cartella dove è situato il file "project_7.tcl"
-  tramite comandi dos (es: cd e:/folderprj) 
-4.Sulla console tcl digitare: "source project_7.tcl" 
+  tramite comandi dos (es: cd e:/folderprj)
+4.Sulla console tcl digitare: "source project_7.tcl"
 5.La cartella "filter2D" contiene il progetto Vivado HLS 
   utilizzato per generare i bitstream usati negli esempi.
   Per aprire i progetti HLS fare doppio click con il mouse su i file ".app"
