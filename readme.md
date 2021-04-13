@@ -1,8 +1,7 @@
 <h1> Processamento immagini potenziato tramite overlay creato in Vivado 2018.3  </h1>
 
 L’obiettivo di questo progetto consiste nella creazione di un’infrastruttura che si basa su strutture xilinx per l’FPGA pynq-z2 (vivado hls ,vivado 2018.3 ,jupiter notebook).
-La struttura punta alla creazione di un overlay in cui è descritto uno schema a blocchi che può attuare due funzioni una per la decodifica e codifica dei segnali video.
-La seconda funzione è un’accelerazione di un modulo grazie al pipelining programmato  su vivado hls e sintetizzato per poterlo aggregare al design vivado. tale funzione consiste in un filtro sobel per le immagini che utilizza la convoluzione questo filtro sarà applicato ai frame streammati e catturati .
+La struttura punta alla creazione di un overlay in cui è descritto uno schema a blocchi che può attuare due funzioni una per la decodifica e codifica dei segnali video e la seconda per il filtraggio dei frame video tramite un filtro Sobel fatto in Vivado HLS.
 
 
 
