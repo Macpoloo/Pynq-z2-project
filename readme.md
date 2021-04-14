@@ -52,7 +52,8 @@ Numpy/CV2
   utilizzato per generare i bitstream usati negli esempi.
   Per aprire il progetto HLS fare doppio click con il mouse sul file ".app"
 
-<h3> JUPYTERNOTEBOOK</h3> 
+<h3> JUPYTER NOTEBOOK</h3> 
 
-Per gli esempi in python effettuare l'upload dei file contenuti nelle
-cartelle bitstream e notebook.
+Ogni proggetto contiene due cartelle.La cartella bitstream racchiude i file che servono a far funzionare l'overlay dal momento che contengono la sintesi del design vivado infatti un dispositivo FPGA Xilinx deve essere programmato utilizzando un bitstream specifico affinché si comporti come una piattaforma hardware incorporata(.tcl,.bit,.hwh).
+La cartella notebook contiene i file python che servono per interfacciarsi con l'hardware descritto all'interno del bitstream.
+questi file devono essere caricati all'interno dell'ambiente JUPYTER NOTEBOOK per poterli eseguire.
