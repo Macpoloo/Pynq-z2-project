@@ -6,4 +6,4 @@ All'interno della cartella filter2D è possibile vedere l'implementazione in viv
 all'interno della cartella notebook è possibile vedere vari file python creati in Jupyter notebook per interfacciarsi con il filtro e fare vari test.
 
 
-Il design utiliza varie tecnologie e standard video come: Transition-minimized differential signaling (TMDS),Display Data Channel (DDC),Hot Plug Detection HPD
+Il design utiliza varie tecnologie e standard video come: Transition-minimized differential signaling (TMDS),Display Data Channel (DDC),Hot Plug Detection (HPD)
